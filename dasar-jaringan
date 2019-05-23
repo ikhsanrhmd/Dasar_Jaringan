@@ -34,5 +34,45 @@ Jika waktu diperlukan 8s, maka throughput = 64kb/8s = 8kbps
 ---------------------------------------------------------------------------
 
 -Protokol
+adalah seperangkat aturan yang mengatur komunikasi dalam jaringan.
+-control protocol
+menempatkan control data di header pada protokol massage untuk membantu operasi pada control plane
+-layered protocol
+protokol stack terdiri atas sekumpulan layer protokol. setiap protokol pada layer berbeda dapat berkomunikasi melalui send dan recv.
+
+-----------------------------------------------------------------------------------------------------------
+
+- 7 Layer OSI
+
+OSI = Open System Interconnection
+Mencakup (bawah ke atas):
+1. Physical layer (bits)
+---> semua media transmisi, pensinyalan, topologi, sinkronasi.
+2. Data Link Layer (frame)
+---> mengumpulkan bit-bit pada physical link menjadi frame
+3. Network Layer (packet)
+---> mendefenisikan alamat IP, header packet.
+4. Transport layer (segmen)
+---> memecah data ke dalam packet (segmen), ACK, menyusun kembali packet.
+5. Session Layer (data)
+---> mendefenisikan pembuatan, pemeliharaan dan penghapusan koneksi. Juga proses resolusi
+6. Presentation Layer (data)
+---> mempresentasikan/translasi data akan ditransmisi oleh apk ke dalam format sesuai
+7. Application Layer (data)
+---> antar muka aplikasi dan pengguna,
+   mengatur aplikasi --> protokol HTTP, FTP, SMTP, NFS.
+------------------------------------------------------------------------------------------------------
+
+- 4 Layer TCP/IP
+
+4 layer TCP/IP adalah perbaikan dari kekurangan yang dimiliki 7 layer OSI
+Mencakup (bawah ke atas)
+1. Network Access Layer --> layer 1 dan 2 di OSI (physical dan data link)
+2. Internet Layer -> layer 3 di OSI (network)
+3. Transport Layer -> layer 4 di OSI (Transport)
+4. Aplication Layer -> layer 5,6,7 di OSI (Session, Presentation, Application)
+
+
+
 
  
