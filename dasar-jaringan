@@ -1,0 +1,38 @@
+-Sifat Jaringan Komputer
+1. Scalability : jaringan berkembang sesuai dengan kebutuhan
+2. Resource sharing : Pemakaian bersama (berbagi) resource 
+3. Connectivity: mudah terhubung dan dihubungkan.
+                 device = router, switch, hub, wireless
+4. Reliability : dapat diukur performa, kehandalan suatu jaringan
+
+----------------------------------------
+- Prinsip dasar jaringan komputer:
+1. Ukuran performasi (Performance measure)
+2. Operasi pada Control plane
+Operasi untuk mengontrol paket data --> routing (memetakan keamanan paket akan dikirim)
+                                        forwarding (proses pengiriman paket)
+                                        apply (paket disetujui secara berkala)
+3. Operasi pada Data plane
+4. Interoperability
+
+--------------------------------------
+1. Performance measure
+ukuran performansi suatu jaringan komputer ( bandwith , trougput )
+  *bandwith -> lebar pita/jumlah maksimum data yang dapat ditangani oleh sistem
+  *offered load/input traffic -> ukuran sibuk atau tidaknya suatu jaringan 
+  *troughput/output traffic -> bandwith sebenarnya
+contoh:
+bandwith = 16 kbps, suatu file diunduh sebesar 64kb, 
+maka waktu yang diperlukan -> 64kb/16kbps = 4s
+Jika waktu diperlukan 8s, maka throughput = 64kb/8s = 8kbps
+  *latency -> node (host, gateway), link (point to point, broadcast), path(routed, swithced)
+ 
+ 2. Ineteroperability
+ chipset, hardware, yang digunakan pada jaringan komputer umumnya berasal dari vendor
+  *interoperability -> plug and play device dari beragam vendor, sehingga dapat berkomunikasi satu sama lain
+    *Protokol -> aturan yang mengatur komunikasi di dalam jaringan.
+---------------------------------------------------------------------------
+
+-Protokol
+
+ 
