@@ -1,3 +1,6 @@
+Jaringan Komputer
+adalah interkoneksi antara 2 komputer atau lebih yang terhubung dengan media transmisi kabel atau tanpa kabel
+
 -Sifat Jaringan Komputer
 1. Scalability : jaringan berkembang sesuai dengan kebutuhan
 2. Resource sharing : Pemakaian bersama (berbagi) resource 
@@ -73,6 +76,107 @@ Mencakup (bawah ke atas)
 4. Aplication Layer -> layer 5,6,7 di OSI (Session, Presentation, Application)
 
 
+---------------------------------------------------------------------------------------------------
+Koneksi antar Komputer:
+1. Peer to peer
+2. Client Server
 
+------------------
+1. Peer to peer
+merupakan jaringan komputer yang terhubung pada beberapa komputer dengan kabel atau wireless
+atau setiap PC dapat memakai resource PC lain (setiap komputer dapat berfungsi sebagai client atau server pada periode yg sama)
 
+Kelebihan:
+1. Implementasi murah dan mudah
+2. tidak memerlukan administrator jaringan
+Kekurangan:
+1. Jaringan tidak terlalu besar
+2. Tingkat keamanan rendah
+3. Tidak ada management jaringan
+---------------------
+
+2.Client-Server
+Merupakan model jaringan yang menggunakan satu atau beberapa komputer sebagai server yg memberikan resource kepada komputer lain(client)
+
+Kelebihan
+1. Mendukung keamanan jaringan yang lebih baik
+2. Management jaringan terpusat
+3. semua data bisa disimpan pada satu lokasi
+kekurangan:
+1. Butuh admin profesional
+2. Butuh perangkat yg bagus sebagai server
+3. anggaran management besar
+-----------------------------------------
+
+Jenis Jaringan Komputer
+1.LAN = antar kantor/gedung
+2.MAN = antar kota
+3.WAN = antar negara 
+
+-------------------------------------------------
+
+TOPOLOGI JARINGAN KOMPUTER
+
+1. Kabel
+-Coaxial Cable = thick coaxial(gemuk) & thin coaxial(kurus/kabel radio)
+ Biasanya menggunakan model jaringan bus
+- Twisted Pair Cable
+  UTP dan STP 
+  1. UTP
+    - Straight Through Cable
+    untuk menghubungkan komputer melalui HUB atau Switch, berfungsi sebagai konsentrator maupun repeater
+    biasanya menggunakan topologi start / tree
+    PC -> HUB 
+    PC -> Switch
+    HUB -> HUB
+    Switch -> Router
+        urutan kabel: putih orange, orange
+                      putih hijau, biru
+                      putih biru, hijau
+                      putih coklat, coklat
+               
+   -Cross Over Cable
+    untuk komunikasi komputer langsung tanpa switch 
+    PC -> PC
+    Switch -> Switch
+    Switch -> Hub
+       urutan kalbel A= putih hijau, hijau
+                        putih orange, biru
+                        putih biru, orange
+                        putih coklat, coklat
+       urutan kabel B = kabel straight           
+- Fiber Optic
+  lebih cepat dari pada TCP dan Coaxial kabel
+  
+2. Ethernet Card / NIC 
+ cara kerja NIC berdasarkan broadcast network yaitu setiap node dalam suatu jaringan menerima data yang dikirmkan oleh node lain
+ setiap  Ethernet Card memiliki alamat sepanjang 48bit yang dikenal sebagai MAC Address
  
+3. HUB dan Switch
+   merupakan sebuah perangkat yang menyatukan kabel kabel pada setiap workstation atau server. 
+   biasanya banyak lubang RJ-45
+   Switch lebih baik dibanding Hub, dengan kemampuan management trafic data dan juga dapat diberi IP address
+   
+  
+ Topologi jaringan : bus, star, ring, tree, mesh
+ 
+Penyaluran Sinyal
+1. Unicast
+2. Multicast
+3. Broadcast
+
+--------------------------------------------------------------------------------
+Internet , Extranet , Internet
+
+1. intranet
+  Jaringan internal perusahaan yg dibagun menggunakan teknologi internet (arsitektur berupa aplikasi web dan protocol TCP/IP)
+2. Extranet
+  Extranet merupakan jaringan intranet perusahaan yang ingin mengekspose sebagian informasi ke jaringan luar.
+3. Internet (Interconnected Network)
+  sebuah sistem komunikasi global yang menggabungkan komputer-komputer dengan jaringan komputer diseluruh dunia.
+  ketika komputer terhubung secara global dengan menggunakan TCP/IP sebagai protokol pertukaran paket data.
+  
+-----------------------------------------------------------------------------------------
+TCP/IP & IP address
+
+
