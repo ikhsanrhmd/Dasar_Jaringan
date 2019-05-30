@@ -117,6 +117,19 @@ Jenis Jaringan Komputer
 
 TOPOLOGI JARINGAN KOMPUTER
 
+1. Topologi Bus = Menggunakan kabel pusat(seluruh server dihubungkan)
+2. Topologi Ring = Workstation dan server dihubungkan terbentuk seperti lingkaran. 
+                   Kelemahan nya yaitu setiap node menerima informasi yang dilewatkan pada jaringan, sehingga jika ada
+                   gangguan pada node maka seluruh jaringan akan terganggu.
+3. Topologi Star = Masing masing server terhung secara langsung ke server / hub.
+                   Kelebihan = adanya kabel tersendiri yang terhubung ke server, bila terdapat suatu gangguan pada server,
+                               seluruh jaringan tidak mengalami gangguan.
+                   Kekurangan = kebutuhan kabel lebih besar dibanding topologi lain nya.
+4. Topologi Tree = Gabungan dari topologi star dan bus.
+5. Topologi Mesh = digunakan pada kondisi dimana tidak ada hubungan komunikasi terputus secara absolut antar node komputer.
+
+                   
+
 1. Kabel
 -Coaxial Cable = thick coaxial(gemuk) & thin coaxial(kurus/kabel radio)
  Biasanya menggunakan model jaringan bus
