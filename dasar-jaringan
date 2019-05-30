@@ -128,9 +128,17 @@ TOPOLOGI JARINGAN KOMPUTER
 4. Topologi Tree = Gabungan dari topologi star dan bus.
 5. Topologi Mesh = digunakan pada kondisi dimana tidak ada hubungan komunikasi terputus secara absolut antar node komputer.
 
-                   
+--------------------------------------------------------------------------------
 
-1. Kabel
+PERANGKAT JARINGAN KOMPUTER
+
+1. Server                       = Pusat kontrol jaringan komputer. Berfungsi untuk menyimpan informasi dan mengelola suatu jaringan.
+                                  Sistem Operasi pada server adalah OS yang khusus yg dapat memberikan layanan bagi workstation
+2. Workstation                  = komputer yang terhubung dengan LAN. Semua komputer yang terhubung dengan LAN dikatakan Workstation.
+                                  workstation dapat melakukan akses ke server guna mendapat layanan yang disediakan server.
+3. Network Interface Card (NIC) = Hardware yang dapat menghubungkan komputer ke jaringan.
+
+4. Kabel
 -Coaxial Cable = thick coaxial(gemuk) & thin coaxial(kurus/kabel radio)
  Biasanya menggunakan model jaringan bus
 - Twisted Pair Cable
@@ -166,6 +174,8 @@ TOPOLOGI JARINGAN KOMPUTER
  setiap  Ethernet Card memiliki alamat sepanjang 48bit yang dikenal sebagai MAC Address
  
 3. HUB dan Switch
+   Hub adalah perangkat dengan banyak port yang memungkinkan beberapa titik NIC bergabung menjadi satu jaringan.
+   
    merupakan sebuah perangkat yang menyatukan kabel kabel pada setiap workstation atau server. 
    biasanya banyak lubang RJ-45
    Switch lebih baik dibanding Hub, dengan kemampuan management trafic data dan juga dapat diberi IP address
