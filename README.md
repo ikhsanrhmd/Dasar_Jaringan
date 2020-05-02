@@ -1,2 +1,205 @@
-# Dasar_Jaringan
-Ringkasan Dasar Jaringan 
+Jaringan Komputer
+adalah interkoneksi antara 2 komputer atau lebih yang terhubung dengan media transmisi kabel atau tanpa kabel
+
+-Sifat Jaringan Komputer
+1. Scalability : jaringan berkembang sesuai dengan kebutuhan
+2. Resource sharing : Pemakaian bersama (berbagi) resource 
+3. Connectivity: mudah terhubung dan dihubungkan.
+                 device = router, switch, hub, wireless
+4. Reliability : dapat diukur performa, kehandalan suatu jaringan
+
+----------------------------------------
+- Prinsip dasar jaringan komputer:
+1. Ukuran performasi (Performance measure)
+2. Operasi pada Control plane
+Operasi untuk mengontrol paket data --> routing (memetakan keamanan paket akan dikirim)
+                                        forwarding (proses pengiriman paket)
+                                        apply (paket disetujui secara berkala)
+3. Operasi pada Data plane
+4. Interoperability
+
+--------------------------------------
+1. Performance measure
+ukuran performansi suatu jaringan komputer ( bandwith , trougput )
+  *bandwith -> lebar pita/jumlah maksimum data yang dapat ditangani oleh sistem
+  *offered load/input traffic -> ukuran sibuk atau tidaknya suatu jaringan 
+  *troughput/output traffic -> bandwith sebenarnya
+contoh:
+bandwith = 16 kbps, suatu file diunduh sebesar 64kb, 
+maka waktu yang diperlukan -> 64kb/16kbps = 4s
+Jika waktu diperlukan 8s, maka throughput = 64kb/8s = 8kbps
+  *latency -> node (host, gateway), link (point to point, broadcast), path(routed, swithced)
+ 
+ 2. Ineteroperability
+ chipset, hardware, yang digunakan pada jaringan komputer umumnya berasal dari vendor
+  *interoperability -> plug and play device dari beragam vendor, sehingga dapat berkomunikasi satu sama lain
+    *Protokol -> aturan yang mengatur komunikasi di dalam jaringan.
+---------------------------------------------------------------------------
+
+-Protokol
+adalah seperangkat aturan yang mengatur komunikasi dalam jaringan.
+-control protocol
+menempatkan control data di header pada protokol massage untuk membantu operasi pada control plane
+-layered protocol
+protokol stack terdiri atas sekumpulan layer protokol. setiap protokol pada layer berbeda dapat berkomunikasi melalui send dan recv.
+
+-----------------------------------------------------------------------------------------------------------
+
+- 7 Layer OSI
+
+OSI = Open System Interconnection
+Mencakup (bawah ke atas):
+1. Physical layer (bits)
+---> semua media transmisi, pensinyalan, topologi, sinkronasi.
+2. Data Link Layer (frame)
+---> mengumpulkan bit-bit pada physical link menjadi frame
+3. Network Layer (packet)
+---> mendefenisikan alamat IP, header packet.
+4. Transport layer (segmen)
+---> memecah data ke dalam packet (segmen), ACK, menyusun kembali packet.
+5. Session Layer (data)
+---> mendefenisikan pembuatan, pemeliharaan dan penghapusan koneksi. Juga proses resolusi
+6. Presentation Layer (data)
+---> mempresentasikan/translasi data akan ditransmisi oleh apk ke dalam format sesuai
+7. Application Layer (data)
+---> antar muka aplikasi dan pengguna,
+   mengatur aplikasi --> protokol HTTP, FTP, SMTP, NFS.
+------------------------------------------------------------------------------------------------------
+
+- 4 Layer TCP/IP
+
+4 layer TCP/IP adalah perbaikan dari kekurangan yang dimiliki 7 layer OSI
+Mencakup (bawah ke atas)
+1. Network Access Layer --> layer 1 dan 2 di OSI (physical dan data link)
+2. Internet Layer -> layer 3 di OSI (network)
+3. Transport Layer -> layer 4 di OSI (Transport)
+4. Aplication Layer -> layer 5,6,7 di OSI (Session, Presentation, Application)
+
+
+---------------------------------------------------------------------------------------------------
+Koneksi antar Komputer:
+1. Peer to peer
+2. Client Server
+
+------------------
+1. Peer to peer
+merupakan jaringan komputer yang terhubung pada beberapa komputer dengan kabel atau wireless
+atau setiap PC dapat memakai resource PC lain (setiap komputer dapat berfungsi sebagai client atau server pada periode yg sama)
+
+Kelebihan:
+1. Implementasi murah dan mudah
+2. tidak memerlukan administrator jaringan
+Kekurangan:
+1. Jaringan tidak terlalu besar
+2. Tingkat keamanan rendah
+3. Tidak ada management jaringan
+---------------------
+
+2.Client-Server
+Merupakan model jaringan yang menggunakan satu atau beberapa komputer sebagai server yg memberikan resource kepada komputer lain(client)
+
+Kelebihan
+1. Mendukung keamanan jaringan yang lebih baik
+2. Management jaringan terpusat
+3. semua data bisa disimpan pada satu lokasi
+kekurangan:
+1. Butuh admin profesional
+2. Butuh perangkat yg bagus sebagai server
+3. anggaran management besar
+-----------------------------------------
+
+Jenis Jaringan Komputer
+1.LAN = antar kantor/gedung
+2.MAN = antar kota
+3.WAN = antar negara 
+
+-------------------------------------------------
+
+TOPOLOGI JARINGAN KOMPUTER
+
+1. Topologi Bus = Menggunakan kabel pusat(seluruh server dihubungkan)
+2. Topologi Ring = Workstation dan server dihubungkan terbentuk seperti lingkaran. 
+                   Kelemahan nya yaitu setiap node menerima informasi yang dilewatkan pada jaringan, sehingga jika ada
+                   gangguan pada node maka seluruh jaringan akan terganggu.
+3. Topologi Star = Masing masing server terhung secara langsung ke server / hub.
+                   Kelebihan = adanya kabel tersendiri yang terhubung ke server, bila terdapat suatu gangguan pada server,
+                               seluruh jaringan tidak mengalami gangguan.
+                   Kekurangan = kebutuhan kabel lebih besar dibanding topologi lain nya.
+4. Topologi Tree = Gabungan dari topologi star dan bus.
+5. Topologi Mesh = digunakan pada kondisi dimana tidak ada hubungan komunikasi terputus secara absolut antar node komputer.
+
+--------------------------------------------------------------------------------
+
+PERANGKAT JARINGAN KOMPUTER
+
+1. Server                       = Pusat kontrol jaringan komputer. Berfungsi untuk menyimpan informasi dan mengelola suatu jaringan.
+                                  Sistem Operasi pada server adalah OS yang khusus yg dapat memberikan layanan bagi workstation
+2. Workstation                  = komputer yang terhubung dengan LAN. Semua komputer yang terhubung dengan LAN dikatakan Workstation.
+                                  workstation dapat melakukan akses ke server guna mendapat layanan yang disediakan server.
+3. Network Interface Card (NIC) = Hardware yang dapat menghubungkan komputer ke jaringan.
+
+4. Kabel
+-Coaxial Cable = thick coaxial(gemuk) & thin coaxial(kurus/kabel radio)
+ Biasanya menggunakan model jaringan bus
+- Twisted Pair Cable
+  UTP dan STP 
+  1. UTP
+    - Straight Through Cable
+    untuk menghubungkan komputer melalui HUB atau Switch, berfungsi sebagai konsentrator maupun repeater
+    biasanya menggunakan topologi start / tree
+    PC -> HUB 
+    PC -> Switch
+    HUB -> HUB
+    Switch -> Router
+        urutan kabel: putih orange, orange
+                      putih hijau, biru
+                      putih biru, hijau
+                      putih coklat, coklat
+               
+   -Cross Over Cable
+    untuk komunikasi komputer langsung tanpa switch 
+    PC -> PC
+    Switch -> Switch
+    Switch -> Hub
+       urutan kalbel A= putih hijau, hijau
+                        putih orange, biru
+                        putih biru, orange
+                        putih coklat, coklat
+       urutan kabel B = kabel straight           
+- Fiber Optic
+  lebih cepat dari pada TCP dan Coaxial kabel
+  
+2. Ethernet Card / NIC 
+ cara kerja NIC berdasarkan broadcast network yaitu setiap node dalam suatu jaringan menerima data yang dikirmkan oleh node lain
+ setiap  Ethernet Card memiliki alamat sepanjang 48bit yang dikenal sebagai MAC Address
+ 
+3. HUB dan Switch
+   Hub adalah perangkat dengan banyak port yang memungkinkan beberapa titik NIC bergabung menjadi satu jaringan.
+   
+   merupakan sebuah perangkat yang menyatukan kabel kabel pada setiap workstation atau server. 
+   biasanya banyak lubang RJ-45
+   Switch lebih baik dibanding Hub, dengan kemampuan management trafic data dan juga dapat diberi IP address
+   
+  
+ Topologi jaringan : bus, star, ring, tree, mesh
+ 
+Penyaluran Sinyal
+1. Unicast
+2. Multicast
+3. Broadcast
+
+--------------------------------------------------------------------------------
+Internet , Extranet , Internet
+
+1. intranet
+  Jaringan internal perusahaan yg dibagun menggunakan teknologi internet (arsitektur berupa aplikasi web dan protocol TCP/IP)
+2. Extranet
+  Extranet merupakan jaringan intranet perusahaan yang ingin mengekspose sebagian informasi ke jaringan luar.
+3. Internet (Interconnected Network)
+  sebuah sistem komunikasi global yang menggabungkan komputer-komputer dengan jaringan komputer diseluruh dunia.
+  ketika komputer terhubung secara global dengan menggunakan TCP/IP sebagai protokol pertukaran paket data.
+  
+-----------------------------------------------------------------------------------------
+TCP/IP & IP address
+
+
